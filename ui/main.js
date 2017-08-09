@@ -3,10 +3,10 @@ console.log('Loaded!');
 var img=document.getElementById('madi');
 
 function moveRight()
-{ var marginleft=marginleft+100;
-   marginleft=marginleft+'px';
+{ img.style.marginLeft=marginLeft+100;
+   marginLeft=marginLeft+'px';
 }
 
-img.click(function(){
+img.onclick(function(){
 var interval=setInterval(moveRight,100);
 });
